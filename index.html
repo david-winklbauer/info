@@ -6,7 +6,6 @@
 <title>David Winklbauer</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
-  /* Basis / Desktop (verhält sich wie deine originale Datei) */
   html,body { height:100%; margin:0; background:#ffffff; font-family:'Bebas Neue', sans-serif; }
   header {
     position: absolute;
@@ -16,15 +15,15 @@
     align-items: baseline;
   }
   header strong {
-    font-size: 28px; /* größer als mittlerer Text */
+    font-size: 28px;
     color: #000;
     line-height: 1;
   }
   header a {
-    margin-left: 16px; /* Abstand zum Namen */
+    margin-left: 16px;
     text-decoration: none;
-    color: #555; /* helleres dunkelgrau */
-    font-size: 14px; /* kleiner als mittlerer Text */
+    color: #555;
+    font-size: 14px;
     transition: color .15s ease, text-decoration .15s ease;
   }
   header a:hover {
@@ -34,57 +33,42 @@
 
   main {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
     max-width: 600px;
     font-size: 18px;
     line-height: 1.4;
     color: #000;
+    text-align: left;
   }
 
-  /* --- Responsive Verbesserungen für Handy ---
-     Ziel: Desktop bleibt wie gehabt, auf kleinen Bildschirmen
-     werden Layout und Schriftgrößen angepasst, damit's lesbar ist.
-  */
   @media (max-width: 600px) {
-    /* Header: fester, kleiner und mit etwas mehr Abstand zum Rand */
     header {
-      position: fixed; /* bleibt oben beim scrollen */
+      position: absolute;
       top: 12px;
       left: 12px;
-      right: 12px;
+      right: auto;
       display:flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-      z-index: 10;
-      background: transparent;
+      align-items: baseline;
     }
     header strong { font-size: 20px; }
-    header a { font-size: 13px; margin-left: 8px; }
+    header a { font-size: 13px; margin-left: 12px; }
 
-    /* Main: nicht absolut zentriert — stattdessen normaler Flow mit zentriertem Text
-       und etwas mehr Seitenabstand, damit nichts unter dem Header verschwindet. */
     main {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: none;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
       max-width: 92%;
-      margin: 72px auto 24px; /* Platz über dem Inhalt für den Header */
-      text-align: center; /* besser lesbar auf schmalen Displays */
       font-size: 16px;
       line-height: 1.5;
+      text-align: left;
       word-break: break-word;
-      color: #000;
     }
 
-    /* Falls du sehr kleine Handys unterstützen willst: kleinere Fonts und engerer Abstand */
     @media (max-width: 360px) {
       header strong { font-size: 18px; }
-      main { font-size: 15px; margin-top: 68px; }
+      main { font-size: 15px; }
     }
   }
 </style>
