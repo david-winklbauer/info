@@ -6,7 +6,12 @@
 <title>David Winklbauer</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
-  html,body { height:100%; margin:0; background:#ffffff; font-family:'Bebas Neue', sans-serif; }
+  html,body { 
+    height:100%; 
+    margin:0; 
+    background:#ffffff; 
+    font-family:'Bebas Neue', sans-serif; 
+  }
   header {
     position: absolute;
     top: 20px;
@@ -15,7 +20,7 @@
     align-items: baseline;
   }
   header strong {
-    font-size: 28px; /* Desktop unchanged */
+    font-size: 28px;
     color: #000;
     line-height: 1;
   }
@@ -37,33 +42,25 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
-    max-width: 600px; /* keep desktop behavior */
+    max-width: 600px;
     font-size: 18px;
     line-height: 1.4;
     color: #000;
   }
 
-  /* Mobile: reduce left/right margins so text is wider (more words/line)
-     Desktop remains exactly as before. */
+  /* Mobile-Version: mehr Rand als vorher */
   @media (max-width: 768px) {
     main {
-      /* keep centered vertically */
       position: absolute;
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
-
-      /* use a width that leaves only about 24px on each side */
-      width: calc(100vw - 48px);
-      max-width: none; /* allow it to grow to the calc width */
-
-      /* keep font sizing similar but feel free to tweak */
+      width: calc(100vw - 64px); /* 32px Rand pro Seite */
+      max-width: none;
       font-size: 16px;
       line-height: 1.35;
       text-align: left;
     }
-
-    /* if you prefer an even tighter margin, change the 48px above to 24px (12px per side) */
   }
 </style>
 </head>
