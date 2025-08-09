@@ -15,7 +15,7 @@
     align-items: baseline;
   }
   header strong {
-    font-size: 28px;
+    font-size: 28px; /* Desktop unchanged */
     color: #000;
     line-height: 1;
   }
@@ -37,24 +37,33 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
-    max-width: 600px;
+    max-width: 600px; /* keep desktop behavior */
     font-size: 18px;
     line-height: 1.4;
     color: #000;
   }
 
-  /* Mobile-Version */
+  /* Mobile: reduce left/right margins so text is wider (more words/line)
+     Desktop remains exactly as before. */
   @media (max-width: 768px) {
     main {
+      /* keep centered vertically */
       position: absolute;
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
-      text-align: left;
-      max-width: 95%; /* noch weniger Abstand links/rechts */
+
+      /* use a width that leaves only about 24px on each side */
+      width: calc(100vw - 48px);
+      max-width: none; /* allow it to grow to the calc width */
+
+      /* keep font sizing similar but feel free to tweak */
       font-size: 16px;
-      line-height: 1.4;
+      line-height: 1.35;
+      text-align: left;
     }
+
+    /* if you prefer an even tighter margin, change the 48px above to 24px (12px per side) */
   }
 </style>
 </head>
