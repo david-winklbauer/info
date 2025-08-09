@@ -6,7 +6,6 @@
 <title>David Winklbauer</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
-  /* Desktop-Original */
   html,body { height:100%; margin:0; background:#ffffff; font-family:'Bebas Neue', sans-serif; }
   header {
     position: absolute;
@@ -16,60 +15,45 @@
     align-items: baseline;
   }
   header strong {
-    font-size: 28px;
+    font-size: 28px; /* größer als mittlerer Text */
     color: #000;
     line-height: 1;
   }
   header a {
-    margin-left: 16px;
+    margin-left: 16px; /* Abstand zum Namen */
     text-decoration: none;
-    color: #555;
-    font-size: 14px;
+    color: #555; /* helleres dunkelgrau */
+    font-size: 14px; /* kleiner als mittlerer Text */
     transition: color .15s ease, text-decoration .15s ease;
   }
   header a:hover {
     text-decoration: underline;
     color: #333;
   }
+
   main {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
     max-width: 600px;
     font-size: 18px;
     line-height: 1.4;
     color: #000;
   }
 
-  /* Mobile-Optimierung */
-  @media (max-width: 600px) {
-    header {
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      right: auto;
-      display:flex;
-      align-items: baseline;
-    }
-    header strong { font-size: 20px; }
-    header a { font-size: 13px; margin-left: 12px; }
-
+  /* Mobile-Version */
+  @media (max-width: 768px) {
     main {
-      top: 50%;
+      position: absolute;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
-      max-width: calc(100% - 40px); /* gleicher Abstand links/rechts (20px auf jeder Seite) */
-      font-size: 16px;
-      line-height: 1.5;
       text-align: left;
-      word-break: break-word;
-    }
-
-    @media (max-width: 360px) {
-      header strong { font-size: 18px; }
-      main { font-size: 15px; }
+      max-width: 80%;
+      font-size: 16px;
+      line-height: 1.4;
     }
   }
 </style>
