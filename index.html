@@ -6,6 +6,7 @@
 <title>David Winklbauer</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
+  /* Basis / Desktop (verhält sich wie deine originale Datei) */
   html,body { height:100%; margin:0; background:#ffffff; font-family:'Bebas Neue', sans-serif; }
   header {
     position: absolute;
@@ -41,6 +42,50 @@
     font-size: 18px;
     line-height: 1.4;
     color: #000;
+  }
+
+  /* --- Responsive Verbesserungen für Handy ---
+     Ziel: Desktop bleibt wie gehabt, auf kleinen Bildschirmen
+     werden Layout und Schriftgrößen angepasst, damit's lesbar ist.
+  */
+  @media (max-width: 600px) {
+    /* Header: fester, kleiner und mit etwas mehr Abstand zum Rand */
+    header {
+      position: fixed; /* bleibt oben beim scrollen */
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      z-index: 10;
+      background: transparent;
+    }
+    header strong { font-size: 20px; }
+    header a { font-size: 13px; margin-left: 8px; }
+
+    /* Main: nicht absolut zentriert — stattdessen normaler Flow mit zentriertem Text
+       und etwas mehr Seitenabstand, damit nichts unter dem Header verschwindet. */
+    main {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      max-width: 92%;
+      margin: 72px auto 24px; /* Platz über dem Inhalt für den Header */
+      text-align: center; /* besser lesbar auf schmalen Displays */
+      font-size: 16px;
+      line-height: 1.5;
+      word-break: break-word;
+      color: #000;
+    }
+
+    /* Falls du sehr kleine Handys unterstützen willst: kleinere Fonts und engerer Abstand */
+    @media (max-width: 360px) {
+      header strong { font-size: 18px; }
+      main { font-size: 15px; margin-top: 68px; }
+    }
   }
 </style>
 </head>
