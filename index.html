@@ -1,86 +1,72 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>David Winklbauer</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<style>
-  html,body { 
-    height:100%; 
-    margin:0; 
-    background:#ffffff; 
-    font-family:'Bebas Neue', sans-serif; 
-    color:#222;
-  }
-  header {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display:flex;
-    align-items: baseline;
-  }
-  header strong {
-    font-size: 28px;
-    color: #000;
-    line-height: 1;
-  }
-  header a {
-    margin-left: 16px;
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-    transition: color .15s ease, text-decoration .15s ease;
-  }
-  header a:hover {
-    text-decoration: underline;
-    color: #333;
-  }
-
-  main {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    max-width: 600px;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
-  .more-link {
-    display: block;
-    margin-top: 20px;
-    font-size: 14px;
-    text-decoration: none;
-    color: #555;
-    transition: color .15s ease, text-decoration .15s ease;
-  }
-  .more-link:hover {
-    text-decoration: underline;
-    color: #333;
-  }
-
-  @media (max-width: 768px) {
-    main {
-      width: calc(100vw - 64px);
-      max-width: none;
-      font-size: 16px;
-      line-height: 1.35;
-      text-align: center;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Winklbauer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background-color: #fff;
+      color: #222;
     }
-  }
-</style>
+    header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+    }
+    header a {
+      text-decoration: none;
+      color: black;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 900; /* fette Version */
+      font-size: 1.5rem;
+    }
+    nav {
+      margin-left: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 150px;
+    }
+    .center h2 {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      max-width: 800px;
+    }
+    .center a {
+      font-size: 1rem;
+      text-decoration: none;
+      color: #222;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <strong>David Winklbauer</strong>
-    <a href="mailto:davidwinklbauer@icloud.com">Contact</a>
+    <a href="index.html"><h1>DAVID WINKLBAUER</h1></a>
+    <nav>
+      <a href="#">CONTACT</a>
+    </nav>
   </header>
 
-  <main>
-    <p>LOVE THE IDEA OF HAVING MY WORK HANG IN SOMEONE'S HOME</p>
-    <a class="more-link" href="more.html">MORE</a>
-  </main>
+  <div class="center">
+    <h2>LOVE THE IDEA OF HAVING MY WORK HANG IN SOMEONE'S HOME</h2>
+    <a href="more.html">MORE</a>
+  </div>
 </body>
 </html>

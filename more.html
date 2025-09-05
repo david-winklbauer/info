@@ -1,93 +1,77 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>More – David Winklbauer</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<style>
-  html,body { 
-    height:100%; 
-    margin:0; 
-    background:#ffffff; 
-    font-family:'Bebas Neue', sans-serif; 
-    color:#222;
-  }
-  header {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display:flex;
-    align-items: baseline;
-  }
-  header a.brand {
-    font-size: 28px;
-    color: #000;
-    line-height: 1;
-    text-decoration: none;
-  }
-  header a.brand:hover {
-    color: #000;
-    text-decoration: none;
-  }
-  header a {
-    margin-left: 16px;
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-    transition: color .15s ease, text-decoration .15s ease;
-  }
-  header a:hover {
-    text-decoration: underline;
-    color: #333;
-  }
-
-  main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    max-width: 800px;
-    font-size: 18px;
-    line-height: 1.5;
-    padding: 0 20px;
-  }
-
-  p { margin-bottom: 16px; }
-
-  @media (max-width: 768px) {
-    main {
-      width: calc(100vw - 64px);
-      max-width: none;
-      font-size: 16px;
-      line-height: 1.35;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More - David Winklbauer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background-color: #fff;
+      color: #222;
     }
-  }
-</style>
+    header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+    }
+    header a {
+      text-decoration: none;
+      color: black;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 900; /* fette Version */
+      font-size: 1.5rem;
+    }
+    nav {
+      margin-left: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .text-box {
+      max-width: 800px; /* gleiche Breite wie PC */
+      text-align: left;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .text-box p {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <a href="index.html" class="brand">David Winklbauer</a>
-    <a href="mailto:davidwinklbauer@icloud.com">Contact</a>
+    <a href="index.html"><h1>DAVID WINKLBAUER</h1></a>
+    <nav>
+      <a href="#">CONTACT</a>
+    </nav>
   </header>
 
-  <main>
-    <p>HELLO, THANKS FOR BEING HERE.</p>
-
-    <p>MY ORIGINAL IDEA WAS TO SELL MY WORK IN SECOND HAND PICTURE FRAMES SO NO FRAME-PICTURE COMBINATION WILL EXIST TWICE.<br>
-    THEN I REALIZED SHIPPING IS VERY EXPENSIVE, ESPECIALLY INTERNATIONAL.</p>
-
-    <p>SO NOW YOU HAVE 2 OPTIONS:</p>
-
-    <p>YOU BUY THE PRINT WITH THE PICTURE FRAME. ALL FRAMES ARE THRIFTED AND MAY HAVE SMALL SCUFFS BUT NOTHING MAJOR.<br>
-    THE SHIPPING MAY BE, DEPENDING ON WHERE YOU LIVE, QUITE EXPENSIVE.</p>
-
-    <p>YOU JUST BUY THE PRINT. IT WILL BE SHIPPED ROLLED UP AND YOU USE YOUR OWN FRAME.<br>
-    THE BIGGEST SIZE POSSIBLE BY MY PRINTER IS 30 × 40CM (≈ 11.81″ × 15.75″).<br>
-    IF YOU WANT IT BIGGER PLEASE CONTACT ME AND WE WILL MAKE SOMETHING WORK.</p>
-
-    <p>MADE WITH LOVE, MADE WITH PASSION; THANKS FOR SUPPORTING MY DREAM</p>
-  </main>
+  <div class="content">
+    <div class="text-box">
+      <p>HELLO, THANKS FOR BEING HERE.</p>
+      <p>MY ORIGINAL IDEA WAS TO SELL MY WORK IN SECOND HAND PICTURE FRAMES SO NO FRAME-PICTURE COMBINATION WILL EXIST TWICE.<br>
+      THEN I REALIZED SHIPPING IS VERY EXPENSIVE, ESPECIALLY INTERNATIONAL.</p>
+      <p>SO NOW YOU HAVE 2 OPTIONS:</p>
+      <p>YOU BUY THE PRINT WITH THE PICTURE FRAME. ALL FRAMES ARE THRIFTED AND MAY HAVE SMALL SCUFFS BUT NOTHING MAJOR.<br>
+      THE SHIPPING MAY BE, DEPENDING ON WHERE YOU LIVE, QUITE EXPENSIVE.</p>
+      <p>YOU JUST BUY THE PRINT. IT WILL BE SHIPPED ROLLED UP AND YOU USE YOUR OWN FRAME.<br>
+      THE BIGGEST SIZE POSSIBLE BY MY PRINTER IS 30 × 40CM (≈ 11.81″ × 15.75″).<br>
+      IF YOU WANT IT BIGGER PLEASE CONTACT ME AND WE WILL MAKE SOMETHING WORK.</p>
+      <p>MADE WITH LOVE, MADE WITH PASSION; THANKS FOR SUPPORTING MY DREAM</p>
+    </div>
+  </div>
 </body>
 </html>
