@@ -20,10 +20,15 @@
     display:flex;
     align-items: baseline;
   }
-  header strong {
+  header a.brand {
     font-size: 28px;
     color: #000;
     line-height: 1;
+    text-decoration: none;
+  }
+  header a.brand:hover {
+    color: #000;
+    text-decoration: none;
   }
   header a {
     margin-left: 16px;
@@ -42,20 +47,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
     max-width: 800px;
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.5;
     padding: 0 20px;
   }
 
-  p { margin-bottom: 14px; }
+  p { margin-bottom: 16px; }
 
   @media (max-width: 768px) {
     main {
       width: calc(100vw - 64px);
       max-width: none;
-      font-size: 13px;
+      font-size: 15px;
       line-height: 1.35;
     }
   }
@@ -63,7 +68,7 @@
 </head>
 <body>
   <header>
-    <strong>David Winklbauer</strong>
+    <a href="index.html" class="brand">David Winklbauer</a>
     <a href="mailto:davidwinklbauer@icloud.com">Contact</a>
   </header>
 
