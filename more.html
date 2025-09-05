@@ -22,7 +22,6 @@
   }
   header a.brand {
     font-size: 28px;
-    font-weight: 900; /* dicker wie am Anfang */
     color: #000;
     line-height: 1;
     text-decoration: none;
@@ -48,9 +47,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: left;              /* linksbündig */
+    text-align: left;
     max-width: 800px;
-    font-size: 18px;               /* gleiche Größe wie Desktop */
+    font-size: 16px;
     line-height: 1.5;
     padding: 0 20px;
   }
@@ -59,11 +58,10 @@
 
   @media (max-width: 768px) {
     main {
-      /* gleiche Größe lassen, damit Umbrüche konsistent sind */
-      font-size: 18px;
-      line-height: 1.5;
       width: calc(100vw - 64px);
-      max-width: 800px;
+      max-width: none;
+      font-size: 15px;
+      line-height: 1.35;
     }
   }
 </style>
@@ -89,7 +87,7 @@
     THE BIGGEST SIZE POSSIBLE BY MY PRINTER IS 30 × 40CM (≈ 11.81″ × 15.75″).<br>
     IF YOU WANT IT BIGGER PLEASE CONTACT ME AND WE WILL MAKE SOMETHING WORK.</p>
 
-    <p>MADE WITH LOVE, MADE WITH PASSION; THANKS FOR SUPPORTING MY<br>DREAM</p>
+    <p>MADE WITH LOVE, MADE WITH PASSION; THANKS FOR SUPPORTING MY DREAM</p>
   </main>
 </body>
 </html>

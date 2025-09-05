@@ -20,11 +20,15 @@
     display:flex;
     align-items: baseline;
   }
-  header strong {
+  header a.brand {
     font-size: 28px;
-    font-weight: 900; /* dicker wie ganz am Anfang */
     color: #000;
     line-height: 1;
+    text-decoration: none;
+  }
+  header a.brand:hover {
+    color: #000;
+    text-decoration: none;
   }
   header a {
     margin-left: 16px;
@@ -66,9 +70,8 @@
     main {
       width: calc(100vw - 64px);
       max-width: none;
-      /* gleiche Größe wie Desktop, damit die Umbrüche konsistenter sind */
-      font-size: 18px;
-      line-height: 1.5;
+      font-size: 16px;
+      line-height: 1.35;
       text-align: center;
     }
   }
@@ -76,7 +79,7 @@
 </head>
 <body>
   <header>
-    <strong>David Winklbauer</strong>
+    <a href="index.html" class="brand">David Winklbauer</a>
     <a href="mailto:davidwinklbauer@icloud.com">Contact</a>
   </header>
 
